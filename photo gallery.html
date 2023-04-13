@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>photo gallery</title>
+
+
+
+    <script>
+
+        var prev=document.getElementById("prev");
+        var next=document.getElementById("next");
+        var thumbnail=document.getElementByClassName("thumbnail");
+        var main=document.getElementById("main");
+        
+        var backgroundimg=new Array(
+        
+        "img/2.jpg",
+        "img/3.jpg",
+        "img/4.jpg",
+        "img/5.jpg",
+        
+        
+        );
+        let=i=0;
+        
+        next.onclick=function()
+        {
+            if(i<4){
+        main.style.backgroundimage='url("'+backgroundimg[i+1]+'")';
+        i++;
+            }
+          
+        }
+        
+            </script>
+</head>
+<body>
+    <div id="main">
+        <div class="navbar">
+            <img src="" class="logo">
+        <div class="user">
+            <button type="button" text-align="right"><a href="slider/index.html">Explore</button></div></a>
+            <img src="" class="logo">
+        </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1>PIXILAB</h1>
+                <p> SAVE IMAGES SAVE STORAGE </p>
+                <p> FREE TO ACCESS </p>
+               
+                <input type="text" placeholder="Search" color="black" background-color="black" bgcolor="black">
+            </div>
+        
+        </div>
+    <div class="slider">
+<img src="img/left-arrow.png" id="prev">
+<div class="preview">
+<img src="img/2  small.jpg" class=" active thumbnail" >
+<img src="img/3 small.jpg" class="thumbnail">
+<img src="img/4 small.jpg" class="thumbnail">
+<img src="img/5 small.jpg" class="thumbnail">
+<img src="img/small5.png" class="thumbnail">
+</div>
+<img src="img/right-arrow.png" id="next">
+
+    </div>
+    </div>
+
+  
+        </body>
+</body>
+</html>
